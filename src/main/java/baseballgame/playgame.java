@@ -18,8 +18,14 @@ public class playgame {
                 player_num.add(Integer.parseInt(String.valueOf(digit)));
           }
         }
-
         scanner.close();
+
+//        Length_exception(player_num.toString());
         return player_num;
+    }
+    public void Length_exception(String s){
+        if(s.length() != 3) {
+            throw new IllegalArgumentException("Not a three digit number");
+        }
     }
 }
