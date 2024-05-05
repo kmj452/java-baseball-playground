@@ -18,7 +18,7 @@ public class playgame {
                 player_num.add(Integer.parseInt(String.valueOf(digit)));
           }
         }
-        scanner.close();
+
 
 //        Length_exception(player_num.toString());
         return player_num;

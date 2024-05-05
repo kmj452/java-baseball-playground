@@ -6,19 +6,24 @@ public class Application {
         ComputerNum computer = new ComputerNum();
         playgame game = new playgame();
         Compare compare = new Compare();
+        Regame regame = new Regame();
 
-        List<Integer> com_num = computer.ComputerNumber();
-        List<Integer> player_num = game.player_num();
+        boolean again = true;
+
+        while(again) {
+            List<Integer> com_num = computer.ComputerNumber();
+            System.out.println(com_num);
+
+            String result = "";
+
+            while(!result.equals("3strike")) {
+                result = compare.Compare_num(com_num, game.player_num());
+                System.out.println(result);
+            }
+            again = regame.restart();
+        }
 
 
-        String result = "";
-        result = compare.Compare_num(com_num, player_num);
-        System.out.println(result);
-
-
-
-        System.out.println(com_num);
-        System.out.println(player_num);
 
     }
 }
