@@ -19,8 +19,7 @@ public class playgame {
           }
         }
 
-
-//        Length_exception(player_num.toString());
+        Length_exception(input);
         return player_num;
     }
     public void Length_exception(String s){
