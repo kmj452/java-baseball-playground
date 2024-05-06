@@ -27,4 +27,5 @@ public class playgame {
             throw new IllegalArgumentException("Not a three digit number");
         }
     }
+
 }
